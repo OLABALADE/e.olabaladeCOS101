@@ -1,6 +1,7 @@
-//A Rust program for the Student Council Voting System of Pan-Atlantic University.
+/*A Rust program for the Student Council Voting System of Pan-Atlantic University.
+A function that ask for the user input and assign the input to a variable.*/
 use std::io;
-//A function that ask for the user input and assign the input to a variable.
+
 fn ask_for_input(que: &str) -> String {
     println!("{}", que);
     let mut var = String::new();
@@ -26,7 +27,7 @@ fn main() {
         let cgpa = ask_for_input("What is your CGPA ?");
         let cgpa: f32 = cgpa.trim().parse().expect("Invalid Input");
 
-        if class_rep == "yes" && cgpa > 4.0 && cgpa < 5.0 && level > 100.0 && level <= 500.0 {
+        if class_rep == "yes" && cgpa > 4.0 && cgpa <= 5.0 && level > 100.0 && level <= 500.0 {
             println!(
                 " Name: {}\n State of origin: {}\n Department: {}\n Email: {}",
                 name, state_of_origin, department, email
