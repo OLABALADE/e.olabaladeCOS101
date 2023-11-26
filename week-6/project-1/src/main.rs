@@ -4,7 +4,9 @@ use std::io;
 fn ask_for_input(que: &str) -> String {
     println!("{}", que);
     let mut var = String::new();
-    io::stdin().read_line(&mut var).expect("Invalid Input");
+    io::stdin()
+        .read_line(&mut var)
+        .expect("Invalid Input");
     return var.trim().to_string().to_lowercase();
 }
 fn main() {
