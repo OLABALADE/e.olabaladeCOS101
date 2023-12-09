@@ -66,7 +66,7 @@ fn main() {
     Gender: {}
     Marital Status: {}
     Programming Language: {}
-    Experience: {}
+    Experience: {} years
     Phone Number: {}
     Email: {}
     Github Account: {}"
